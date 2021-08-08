@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  background: url("../images/pattern-background-mobile.svg") no-repeat, #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+  font-family: 500;
+  font-size: 16px;
+  min-height: 100vh;
+  color: #7280a7;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 375px;
+  margin: 0 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content {
+  padding: 0.75rem 2rem;
+}
+
+.hero-text h1 {
+  font-size: 1.75rem;
+  color: #1f2f56;
+  font-weight: 900;
+  margin: 1rem 0;
+}
+
+.hero-text h2 {
+  font-size: initial;
+}
+
+.plan {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% auto 25%;
+      grid-template-columns: 15% auto 25%;
+  gap: 7.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f7ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.plan span {
+  text-align: left;
+}
+
+.plan span h3 {
+  font-size: 1rem;
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.plan a {
+  color: #3829e0;
+  font-weight: 700;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buttons .button {
+  font-weight: 900;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.buttons .proceed {
+  color: #f5f7ff;
+  background: #3829e0;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$rhd: 'Red Hat Display', sans-serif;
+$font-size: 16px;
+$extr-bold: 900;
+$bold: 700;
+$normal: 500;
+
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+
+body {
+    background: url('../images/pattern-background-mobile.svg') no-repeat,
+        $pale-blue;
+    font-family: $rhd;
+    font-family: $normal;
+    font-size: $font-size;
+    min-height: 100vh;
+    color: $desaturated-blue;
+    display: grid;
+    place-content: center;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 375px;
+    margin: 0 1.5rem;
+
+    background: white;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.content {
+    padding: 0.75rem 2rem;
+}
+
+.hero-text {
+    h1 {
+        font-size: 1.75rem;
+        color: $dark-blue;
+        font-weight: $extr-bold;
+        margin: 1rem 0;
+    }
+    h2 {
+        font-size: initial;
+    }
+}
+.plan {
+    display: grid;
+    grid-template-columns: 15% auto 25%;
+    gap: 7.5%;
+    align-items: center;
+    background: $very-pale-blue;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    span {
+        h3 {
+            font-size: 1rem;
+            color: $dark-blue;
+            font-weight: $bold;
+        }
+        text-align: left;
+    }
+    a {
+        color: $bright-blue;
+        font-weight: $bold;
+    }
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    .button {
+        font-weight: $extr-bold;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-bottom: 0.25rem;
+    }
+    .proceed {
+        color: $very-pale-blue;
+        background: $bright-blue;
+    }
+    .cancel {
+    }
+}
