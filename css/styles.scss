@@ -73,6 +73,10 @@ body {
     a {
         color: $bright-blue;
         font-weight: $bold;
+        &:hover {
+            cursor: pointer;
+            color: #7c7ce4;
+        }
     }
 }
 .buttons {
@@ -83,11 +87,38 @@ body {
         border-radius: 0.5rem;
         padding: 1rem;
         margin-bottom: 0.25rem;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .proceed {
         color: $very-pale-blue;
         background: $bright-blue;
+        &:hover {
+            background: #7c7ce4;
+        }
     }
     .cancel {
+        &:hover {
+            color: $dark-blue;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: url('../images/pattern-background-desktop.svg') no-repeat,
+            $pale-blue;
+        background-size: 100% 50%;
+        background-position: top 10%;
+    }
+
+    .component {
+        max-width: 450px;
+        padding-bottom: 0.5rem;
+    }
+
+    .content {
+        padding: 1rem 3rem;
     }
 }

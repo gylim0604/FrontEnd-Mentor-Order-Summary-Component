@@ -71,6 +71,11 @@ body {
   font-weight: 700;
 }
 
+.plan a:hover {
+  cursor: pointer;
+  color: #7c7ce4;
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,8 +93,35 @@ body {
   margin-bottom: 0.25rem;
 }
 
+.buttons .button:hover {
+  cursor: pointer;
+}
+
 .buttons .proceed {
   color: #f5f7ff;
   background: #3829e0;
+}
+
+.buttons .proceed:hover {
+  background: #7c7ce4;
+}
+
+.buttons .cancel:hover {
+  color: #1f2f56;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: url("../images/pattern-background-desktop.svg") no-repeat, #e0e8ff;
+    background-size: 100% 50%;
+    background-position: top 10%;
+  }
+  .component {
+    max-width: 450px;
+    padding-bottom: 0.5rem;
+  }
+  .content {
+    padding: 1rem 3rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
